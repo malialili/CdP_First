@@ -12,6 +12,7 @@ include("connexion.php");
 
  $id=$_GET['id'];
  
+ 
 $sql ='DELETE FROM Atelier WHERE ID="'.$id.'"';
 mysql_query($sql) or die('Erreur SQL !'.$sql.'<br />'.mysql_error());
 

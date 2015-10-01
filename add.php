@@ -28,7 +28,7 @@ include("connexion.php");
   <br><br><br><br>
 
     <INPUT type="submit" value="Ajouter" name="ajouter">
-    <INPUT type="submit" value="Annuler" name="annuler">
+    <input type="button" value="Annuler" onclick="location.href='index.php'" />
    
 </FORM>
 

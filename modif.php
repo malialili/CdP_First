@@ -26,7 +26,7 @@ include("connexion.php");
         Thèmes disciplinaire* :   <textarea type=textarea  name=theme rows="3" cols="60"><?php echo $data['Themes']; ?> </textarea>
         <BR><br>
        <input type="submit" id="button" name="Modifier" value="Modifier" />
-       <INPUT type="submit" value="Annuler" name="annuler">
+        <input type="button" value="Annuler" onclick="location.href='index.php'" />
     </FORM>
 <?php
 mysql_close(); 

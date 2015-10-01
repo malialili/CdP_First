@@ -54,10 +54,10 @@ while($data = mysql_fetch_assoc($req))
     echo '<td>'.$data['Themes'].'</td>';
 
 	echo '<td > <a href="modif.php?id='.$data['ID'].'" class="buttons edit" ></a></td>';
- 	echo '<td > <a href="supp.php?id='.$data['ID'].'" class="buttons delete"></a></td>';
-    echo '</tr>';		
+	?>
+	<td><a href="supp.php?id=<?php echo $data['ID']; ?>" onclick="return(confirm('Etes-vous sûr de vouloir supprimer cet atelier?'));" class="buttons delete" ></a></td>
+    <?php echo '</tr>';		
     } 
-
 include("deconnexion.php"); 
 ?>
 </FORM>
